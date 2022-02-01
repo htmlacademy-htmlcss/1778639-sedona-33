@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">город Седона</h1>
-      <img class="logo" src="" alt="Логотип города Седона">
+      <img class="logo" src="images/logos/sedona-logo.svg" width="139" height="70" alt="Логотип города Седона">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -44,31 +45,41 @@
     </header>
 
     <main class="main-index">
+      <section class="main-header">
+        <img class="main-header-welcome" src="images/decoration/welcome.svg" width="187.7" height="44.7" alt="Welcome"></br>
+        <img class="main-header-gorgeous" src="images/decoration/to-the-gorgeous.svg" width="256" height="28.78" alt="to the gorgeous"></br>
+        <img class="main-header-sedona" src="images/decoration/sedona-text.svg" width="456.7" height="212.77" alt="Sedona - because the Grand Canyon sucks!">
+      </section>
       <section class="reasons">
-        <h2>Седона — небольшой городок в Аризоне,
+        <h2 class="reasons-title">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="reasons-introduction">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       <ol class="reasons-list">
-        <li class="reason-list-item">
+        <li class="reason-list-item-light">
           <h3 class="reason-list-item-header">Настоящий городок</h3>
+          <img class="reason-list-item-header-image" src="images/reasons/reason-1-photo.jpg" width="800" height="384" alt="фото улицы в Седоне">
           <p class="reason-list-item-desctiption">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           <ul class="reason-sublist">
             <li class="reason-sublist-item">
+              <img class="reason-sublist-item-image" src="images/reasons/accommodation-icon.svg" width="75" height="72" alt="">
               <h3 class="reason-sublist-item-header">Жильё</h3>
               <p class="reason-sublist-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="reason-sublist-item">
+              <img class="reason-sublist-item-image" src="images/reasons/food-icon.svg" width="74" height="70" alt="">
               <h3 class="reason-sublist-item-header">Еда</h3>
               <p class="reason-sublist-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="reason-sublist-item">
+              <img class="reason-sublist-item-image" src="images/reasons/gifts-icon.svg" width="64" height="75.95" alt="">
               <h3 class="reason-sublist-item-header">Сувениры</h3>
               <p class="reason-sublist-item-description">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
         </li>
-        <li class="reason-list-item">
+        <li class="reason-list-item-light">
           <h3 class="reason-list-item-header">Там есть мост дьявола</h3>
+          <img class="reason-list-item-header-image" src="images/reasons/reason-2-photo.jpg" width="800" height="384" alt="фото каньона">
           <p class="reason-list-item-desctiption">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
         <li class="reason-list-item">
@@ -126,7 +137,7 @@
 
     <section class="made-by">
       <h2 class="visually-hidden">Сайт разработан в HTML Academy</h2>
-      <a class="made-by-link" href="https://htmlacademy.ru/"><img class="made-by-logo" src="" alt="Логотип HTML Academy"></a>
+      <a class="made-by-link" href="https://htmlacademy.ru/"><img class="made-by-logo" src="images/logos/html-academy-logo.svg" width="114.9" height="32.9" alt="Логотип HTML Academy"></a>
     </section>
     </footer>
   </body>
