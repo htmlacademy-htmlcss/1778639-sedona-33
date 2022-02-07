@@ -8,9 +8,9 @@
 
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">город Седона</h1>
-      <img class="logo" src="images/logos/sedona-logo.svg" width="139" height="70" alt="Логотип города Седона">
+      <h1 class="visually-hidden" hidden>город Седона</h1>
       <nav class="navigation">
+        <img class="logo" src="images/logos/sedona-logo.svg" width="139" height="70" alt="Логотип города Седона">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
@@ -44,7 +44,8 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-container main-index">
+     <div class="page-container">
       <section class="main-header">
         <img class="main-header-welcome" src="images/decoration/welcome.svg" width="187.7" height="44.7" alt="Welcome"></br>
         <img class="main-header-gorgeous" src="images/decoration/to-the-gorgeous.svg" width="256" height="28.78" alt="to the gorgeous"></br>
@@ -57,7 +58,6 @@
       <ol class="reasons-list">
         <li class="reason-list-item-light">
           <h3 class="reason-list-item-header">Настоящий городок</h3>
-          <img class="reason-list-item-header-image" src="images/reasons/reason-1-photo.jpg" width="800" height="384" alt="фото улицы в Седоне">
           <p class="reason-list-item-desctiption">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           <ul class="reason-sublist">
             <li class="reason-sublist-item">
@@ -79,9 +79,9 @@
         </li>
         <li class="reason-list-item-light">
           <h3 class="reason-list-item-header">Там есть мост дьявола</h3>
-          <img class="reason-list-item-header-image" src="images/reasons/reason-2-photo.jpg" width="800" height="384" alt="фото каньона">
           <p class="reason-list-item-desctiption">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
+        <div class="reasons-container">
         <li class="reason-list-item">
           <h3 class="reason-list-item-header">Небольшая площадь</h3>
           <p class="reason-list-item-desctiption">Все достопримечательности находятся очень близко</p>
@@ -94,6 +94,7 @@
           <h3 class="reason-list-item-header">Мало туристов</h3>
           <p class="reason-list-item-desctiption">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
+        </div>
       </ol>
       </section>
 
@@ -111,12 +112,14 @@
           <input type="text" name="subscribtion-email" id="subscribtion-email" placeholder="Ваш e-mail">
           <button class="button subscribtion-button" type="submit">Подписаться</button>
         </form>
-      </section>  
+      </section> 
+      </div>
     </main>
 
     <footer>
+      <div class="page-footer-container">
       <section class="footer-social">
-        <h2 class="visually-hidden">Ссылки на наши соцсети</h2>
+        <h2 class="visually-hidden" hidden>Ссылки на наши соцсети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-list-item"><a class="button" href="https://twitter.com/htmlacademy_ru">
             <span сlass="visually-hidden">Твиттер</span>
@@ -130,15 +133,18 @@
         </ul>
       </section>
       
+      
     <section class="contacts">
-      <h2 class="visually-hidden">Номер телефона</h2>
+      <h2 class="visually-hidden" hidden>Номер телефона</h2>
       <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </section>
 
     <section class="made-by">
-      <h2 class="visually-hidden">Сайт разработан в HTML Academy</h2>
+      <h2 class="visually-hidden" hidden>Сайт разработан в HTML Academy</h2>
       <a class="made-by-link" href="https://htmlacademy.ru/"><img class="made-by-logo" src="images/logos/html-academy-logo.svg" width="114.9" height="32.9" alt="Логотип HTML Academy"></a>
     </section>
+  </div>
     </footer>
+  
   </body>
 </html>
