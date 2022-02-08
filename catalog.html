@@ -5,11 +5,12 @@
     <title>Каталог гостиниц</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
     <header class="page-header">
-        <h1 class="visually-hidden">город Седона</h1>
-        <img class="logo" src="images/logos/sedona-logo.svg" width="139" height="70" alt="Логотип города Седона">
+        <h1 class="visually-hidden" hidden>город Седона</h1>
         <nav class="navigation">
+        <img class="logo" src="images/logos/sedona-logo.svg" width="139" height="70" alt="Логотип города Седона">
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
@@ -43,8 +44,9 @@
         </nav>
       </header>
 
-      <main class="main-inner">
-          <div class="catalog-header">
+      <main class="main-inner main-container">
+        <div class="page-container">
+          <div class="catalog-header-container">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
@@ -55,8 +57,6 @@
               </li>
           </ul>
 
-          <section class="catalog-items">
-              <h2 class="visually-hidden">Список гостинниц с примененными фильтрами</h2>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
                 <fieldset class="catalog-filter-group">
@@ -110,20 +110,24 @@
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                     <label for="price-range" class="visually-hidden">Выберите желаемую стоимость в диапазоне от 0 до 10000</label>
-                        <input class="control-input" id="price-range" type="range" name="price-range" min="0" max="10000" step="10" value="9000">
+                        <input class="control-input" type="range" name="price-range" id="price-range" min="0" max="10000" step="10" value="9000">
                 </fieldset>
 
                 <button class="button" type="submit">Применить</button>
                 <button class="button reset-button" type="reset">Сбросить</button>
               </form>
             </div>
-
+            
+            
             <section class="search-result">
-                <h2 class="search-result-header">Найдено гостиниц: 38</h2>
+                <h2 class="visually-hidden" hidden>Список гостинниц с примененными фильтрами</h2>
+                <div class="search-result-header-container">
+                <h3 class="search-result-header">Найдено гостиниц: 38</h3>
               <select class="select-control" aria-label="Сортировка">
                   <option value="cheap">Сначала дешёвые</option>
                   <option value="expensive">Сначала дорогие</option>
               </select>
+              <div class="show-buttons-container">
               <a class="button" href="#">
                   <span class="visually-hidden">Показать карточки</span>>
               </a>
@@ -133,6 +137,10 @@
             <a class="button" href="#">
                 <span class="visually-hidden">Показать список</span>>
             </a>
+            </div>
+              </div>
+            
+           
             <ul class="hotel-list">
             <li class="hotel-card">   
                 <img class="product-card-image" src="images/catalog/amara-resort.jpg" width="299" height="206" alt="фото отеля Amara Resort & Spa">
@@ -182,10 +190,12 @@
                 <a class="button hotel-card-rating">Рейтинг: 9,2</a>
             </li>
             </ul>
+           
+        </section>
 
             <button class="button load-more-button" type="button">Загрузить ещё</button>
-
-            <ul class="pagination">
+            <div class="pagination-container">
+            <ul class="pagination-list">
                 <li class="pagination-item current">
                     <a class="pagination-button-selected button" href="#">1</a>
                 </li>
@@ -200,7 +210,7 @@
                 </li>
                 <li class="pagination-item">
                     <a class="pagination-button button" href="#">
-                        <span class="visually-hidden">страницы с пятой по девятую</span>...</a>
+                        <span class="visually-hidden" hidden>страницы с пятой по девятую</span>...</a>
                 </li>
                 <li class="pagination-item">
                     <a class="pagination-button button" href="#">10</a>
@@ -216,7 +226,8 @@
                 <option value="5">5</option>
                 <option value="6">6</option>
             </select>
-          </section>
+            </div>
+          
 
         
 
@@ -228,13 +239,15 @@
               <input type="text" name="subscribtion-email" id="subscribtion-email" placeholder="Ваш e-mail">
               <button class="button subscribtion-button" type="submit">Подписаться</button>
             </form>
-          </section>  
+          </section> 
+        </div> 
       </main>
 
 
       <footer>
+        <div class="page-footer-container">
         <section class="footer-social">
-          <h2 class="visually-hidden">Ссылки на наши соцсети</h2>
+          <h2 class="visually-hidden" hidden>Ссылки на наши соцсети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-list-item"><a class="button" href="https://twitter.com/htmlacademy_ru">
               <span сlass="visually-hidden">Твиттер</span>
@@ -249,14 +262,15 @@
         </section>
         
       <section class="contacts">
-        <h2 class="visually-hidden">Номер телефона</h2>
+        <h2 class="visually-hidden" hidden>Номер телефона</h2>
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
   
       <section class="made-by">
-        <h2 class="visually-hidden">Сайт разработан в HTML Academy</h2>
+        <h2 class="visually-hidden" hidden>Сайт разработан в HTML Academy</h2>
         <a class="made-by-link" href="https://htmlacademy.ru/"><img class="made-by-logo" src="images/logos/html-academy-logo.svg" width="114.9" height="32.9" alt="Логотип HTML Academy"></a>
       </section>
+        </div>
       </footer>
 
 
